@@ -1,0 +1,59 @@
+/*règle neasted "mixine"*/
+@mixin flexMid {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.boxp{
+    @include flexMid;
+    width: 300px;
+    height: 300px;
+    background-color: aqua;
+}
+.boxe{
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+}
+/*règle imbrication*/
+.sectio{
+    background-color: aqua;
+    width: 100%;
+    p{
+        border:1px solid gray;
+    }
+    a{
+        color:black;
+        background-color: blue;
+    }
+}
+/*règle variable*/
+$primary:#27aca1;
+body{
+background-color: $primary;
+}
+/*règle d'héritage*/
+.navigation{
+    color: gray;
+    a{
+        color:gray;
+    }
+}
+.sectio{
+@extend .navigation;
+}
+
+
+    ul{
+       list-style-type: none;
+       a{
+           text-decoration: none;
+           display: inline-block;
+       }
+       li{
+           display: inline-block;
+           margin-left: 10px;
+       }
+    }
+    

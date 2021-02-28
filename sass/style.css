@@ -1,0 +1,66 @@
+@charset "UTF-8";
+/*règle neasted "mixine"*/
+.boxp {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 300px;
+  height: 300px;
+  background-color: aqua;
+}
+
+.boxe {
+  width: 100px;
+  height: 100px;
+  background-color: blue;
+}
+
+/*règle imbrication*/
+.sectio {
+  background-color: aqua;
+  width: 100%;
+}
+
+.sectio p {
+  border: 1px solid gray;
+}
+
+.sectio a {
+  color: black;
+  background-color: blue;
+}
+
+/*règle variable*/
+body {
+  background-color: #27aca1;
+}
+
+/*règle d'héritage*/
+.navigation, .sectio {
+  color: gray;
+}
+
+.navigation a, .sectio a {
+  color: gray;
+}
+
+ul {
+  list-style-type: none;
+}
+
+ul a {
+  text-decoration: none;
+  display: inline-block;
+}
+
+ul li {
+  display: inline-block;
+  margin-left: 10px;
+}
+/*# sourceMappingURL=style.css.map */
