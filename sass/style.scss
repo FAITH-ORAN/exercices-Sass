@@ -22,16 +22,24 @@
     width: 100%;
     p{
         border:1px solid gray;
+        
     }
+    
+    
     a{
         color:black;
         background-color: blue;
     }
 }
+/*règle fonction est appliquer dan le height de body*/
+@function add($a,$b){
+    @return $a + $b ;
+}
 /*règle variable*/
-$primary:#27aca1;
+$primary:#201f1f;
 body{
 background-color: $primary;
+height: add(100vh,50vh)
 }
 /*règle d'héritage*/
 .navigation{
@@ -43,6 +51,16 @@ background-color: $primary;
 .sectio{
 @extend .navigation;
 }
+/*condition*/
+/*@debug pour inspecter la condition*/
+@debug lightness($primary) > 50% ;
+ .btn{
+    @if (lightness($primary) > 50% ){
+        color: red;
+    } @else{
+        color: white;
+    }
+    }
 
 
     ul{
@@ -56,4 +74,7 @@ background-color: $primary;
            margin-left: 10px;
        }
     }
-    
+    /*héritage*/
+    .para{
+        @extend .sectio 
+    }

@@ -22,32 +22,40 @@
 }
 
 /*règle imbrication*/
-.sectio {
+.sectio, .para {
   background-color: aqua;
   width: 100%;
 }
 
-.sectio p {
+.sectio p, .para p {
   border: 1px solid gray;
 }
 
-.sectio a {
+.sectio a, .para a {
   color: black;
   background-color: blue;
 }
 
+/*règle fonction est appliquer dan le height de body*/
 /*règle variable*/
 body {
-  background-color: #27aca1;
+  background-color: #201f1f;
+  height: 150vh;
 }
 
 /*règle d'héritage*/
-.navigation, .sectio {
+.navigation, .sectio, .para {
   color: gray;
 }
 
-.navigation a, .sectio a {
+.navigation a, .sectio a, .para a {
   color: gray;
+}
+
+/*condition*/
+/*@debug pour inspecter la condition*/
+.btn {
+  color: white;
 }
 
 ul {
@@ -63,4 +71,6 @@ ul li {
   display: inline-block;
   margin-left: 10px;
 }
+
+/*héritage*/
 /*# sourceMappingURL=style.css.map */
