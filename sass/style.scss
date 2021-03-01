@@ -4,7 +4,6 @@
     justify-content: center;
     align-items: center;
 }
-
 .boxp{
     @include flexMid;
     width: 300px;
@@ -21,11 +20,8 @@
     background-color: aqua;
     width: 100%;
     p{
-        border:1px solid gray;
-        
+        border:1px solid gray;   
     }
-    
-    
     a{
         color:black;
         background-color: blue;
@@ -61,8 +57,6 @@ height: add(100vh,50vh)
         color: white;
     }
     }
-
-
     ul{
        list-style-type: none;
        a{
@@ -76,5 +70,20 @@ height: add(100vh,50vh)
     }
     /*héritage*/
     .para{
-        @extend .sectio 
+        @extend .sectio ;
     }
+    .sec{
+        @extend %flex-center
+    }
+    /*boucle lecture règle pour la variable i allant de 1 jusqua 4*/
+@for $i from 1 through 4 {
+    .m-#{$i}{
+        margin:0 ($i * 1rem )
+    }  
+}
+/*règle placeholder*/
+%flex-center{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}

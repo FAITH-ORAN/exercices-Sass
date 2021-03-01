@@ -73,4 +73,33 @@ ul li {
 }
 
 /*héritage*/
+/*boucle lecture règle pour la variable i allant de 1 jusqua 4*/
+.m-1 {
+  margin: 0 1rem;
+}
+
+.m-2 {
+  margin: 0 2rem;
+}
+
+.m-3 {
+  margin: 0 3rem;
+}
+
+.m-4 {
+  margin: 0 4rem;
+}
+
+/*règle placeholder*/
+.sec {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
 /*# sourceMappingURL=style.css.map */
